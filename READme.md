@@ -32,6 +32,8 @@ L'exemple précédent montre donc une bonne précision, une bonne capacités à 
 Le graphique de point en dessous représente le graph de quel valeur est confondu avec qui.
 - Le système est maintenant fiable et entrainé pour détecter avec le Thingy:53
 
+- Si vous souhaitez faire votre propre analyse, dans Data acquisition, il faut mesurer pour chaque paramètres 80% dans Train et 20% dans Test avec des gammes et des valeurs différentes.
+- Suivez ensuite la même procédure que précédemment
 **Mise en place de nRF Edge Impulse sur téléphone:**
 - Rendez vous dans Edge Impulse et connectez vous avec le même compte que sur internet
 - Ouvrez votre projet sur le téléphone et allumez le Thingy:53
