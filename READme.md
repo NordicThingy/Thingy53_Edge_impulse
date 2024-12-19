@@ -3,7 +3,7 @@
 Ce manuel a pour but d'expliquer comment mettre en place le Machine Learning sur le Thingy:53 pour détecter des mots ou des chocs...
 
 **Matériel nécessaire :**
-- nRF Edge Impulse
+- nRF Edge Impulse (téléphone)
 - Edge Impulse (ordinateur)
 - Nordic Thingy:53
 
@@ -26,7 +26,7 @@ Ex : Bonne séparabilité
 ![image](https://github.com/user-attachments/assets/354703e8-83fe-4cb3-8480-a6feafd8f622)
 Nous voyons que le taux de bonne prédictions avec le set de données "Test" est de 93,3% (le système "écoute" chaque échantillon du set et regarde s'il le détecte bien comme le label associé)
 Le loss représente l'erreur du modèle qui est de 0,19 ce qui montre que le modèle converge bien.
-Dans le tableau, vous visualisez quel pourcentage de chaque label a été bien identifié ou identifié comme autre chose
+Dans le tableau, vous visualisez quel pourcentage de chaque label a été bien identifié ou identifié comme autre chose.
 Le F1 score est une métrique combinant précision (proportion de vraies prédictions parmi toutes les prédictions) et rappel (capacité à identifier toutes les occurrences d'une classe) compris entre 0 et 1. Plus le score est haut, mieux c'est.
 L'exemple précédent montre donc une bonne précision, une bonne capacités à distinguer les claasses mais des légères confusion pour noise et unknow. le système est globalement fiable.
 Le graphique de point en dessous représente le graph de quel valeur est confondu avec qui.
@@ -34,10 +34,13 @@ Le graphique de point en dessous représente le graph de quel valeur est confond
 
 - Si vous souhaitez faire votre propre analyse, dans Data acquisition, il faut mesurer pour chaque paramètres 80% dans Train et 20% dans Test avec des gammes et des valeurs différentes.
 - Suivez ensuite la même procédure que précédemment
-**Mise en place de nRF Edge Impulse sur téléphone:**
+- 
+**Mise en place de nRF Edge Impulse sur téléphone pour faire fonctionner "l'IA" sur le Thingy:53**
 - Rendez vous dans Edge Impulse et connectez vous avec le même compte que sur internet
 - Ouvrez votre projet sur le téléphone et allumez le Thingy:53
 - Dans devices, trouvez le et connectez vous y
 - Allez dans l'onglet "Deployment" et appuyez sur Deploy en base de l'écran
 - Allez ensuite dans Inferencing et faites "start"
 - En fonction de l'exemple choisi ou du projet développé, vous pouvez tester votre capteur
+
+- Vous pouvez aussi accéder à un exemple de ML avec l'accélération au lien suivant : https://studio.edgeimpulse.com/public/583227/live
